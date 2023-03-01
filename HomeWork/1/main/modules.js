@@ -1,8 +1,9 @@
 // 1.1. Преобразование строки к нижнему регистру, но первая буква большая. "Abscd"
 //export
 function ucFirst(str) {
-  console.log(str[0].toUpperCase() + str.toLowerCase().slice(1));
-  return str[0].toUpperCase() + str.toLowerCase().slice(1);
+  let res = str[0].toUpperCase() + str.toLowerCase().slice(1);
+  console.log(res);
+  return res;
 }
 
 /* 1.2. Преобразование строки с целью правильно расстановки пробелов. 
@@ -10,8 +11,9 @@ function ucFirst(str) {
   "Вот пример строки,в которой используются знаки препинания. После знаков должны стоять пробелы, а перед знаками их быть не должно. Если есть лишние подряд идущие пробелы, они должны быть устранены.*/
 //export
 function removingSpaces(str) {
-  console.log(formatStr(str));
-  return formatStr(str);
+  let res = formatStr(str);
+  console.log(res);
+  return res;
 }
 
 function formatStr(str) {
